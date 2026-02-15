@@ -1,0 +1,141 @@
+/* ===== Element Selector ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 80px; 
+
+}
+
+/* ===== Static Position (Default) ===== */
+section {
+    position: static;   /* default position */
+}
+
+/* ===== Sticky Position ===== */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ecccde;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* ===== Fixed Position ===== */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ecccde;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* ===== Relative Position ===== */
+.profile-container {
+    position: relative;
+    margin: 20px;
+}
+
+/* ===== Absolute Position ===== */
+.profile-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* ===== Class Selector ===== */
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* ===== ID Selector ===== */
+#home {
+    margin: 20px;
+}
+
+/* ===== Descendant Selector ===== */
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: rgb(43, 18, 18);
+    font-weight: bold;
+}
+
+/* ===== Pseudo-class ===== */
+nav a:hover {
+    color: orange;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;   /* Stack items vertically */
+    align-items: center;      /* Center horizontally */
+}
+
+.skills-container ul {
+    text-align: left;         /* Keep list text left-aligned */
+}
+
+
+
+/* ===== Education Table ===== */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0d3ef;
+}
+
+.education-table th {
+    background-color: #d26db9;
+    color: white;
+    padding: 10px;
+}
+
+.education-table td {
+    padding: 10px;
+    border: 1px solid #bc6eb4;
+    color: #333;
+}
+
+/* ===== Form Styling ===== */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 8px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-img {
+        width: 120px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+}
