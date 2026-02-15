@@ -1,4 +1,3 @@
-/* ===== Element Selector ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,12 +6,10 @@ body {
 
 }
 
-/* ===== Static Position (Default) ===== */
 section {
-    position: static;   /* default position */
+    position: static;   
 }
 
-/* ===== Sticky Position ===== */
 header {
     position: sticky;
     top: 0;
@@ -21,7 +18,6 @@ header {
     z-index: 1000;
 }
 
-/* ===== Fixed Position ===== */
 footer {
     position: fixed;
     bottom: 0;
@@ -31,14 +27,11 @@ footer {
     text-align: center;
 }
 
-
-/* ===== Relative Position ===== */
 .profile-container {
     position: relative;
     margin: 20px;
 }
 
-/* ===== Absolute Position ===== */
 .profile-badge {
     position: absolute;
     top: 10px;
@@ -50,19 +43,18 @@ footer {
     font-size: 12px;
 }
 
-/* ===== Class Selector ===== */
 .profile-img {
     width: 200px;
     border-radius: 50%;
     margin: 20px 0;
 }
 
-/* ===== ID Selector ===== */
+
 #home {
     margin: 20px;
 }
 
-/* ===== Descendant Selector ===== */
+
 nav a {
     text-decoration: none;
     margin: 0 15px;
@@ -70,24 +62,24 @@ nav a {
     font-weight: bold;
 }
 
-/* ===== Pseudo-class ===== */
+
 nav a:hover {
     color: orange;
 }
 
 .skills-container {
     display: flex;
-    flex-direction: column;   /* Stack items vertically */
-    align-items: center;      /* Center horizontally */
+    flex-direction: column;   
+    align-items: center;      
 }
 
 .skills-container ul {
-    text-align: left;         /* Keep list text left-aligned */
+    text-align: left;         
 }
 
 
 
-/* ===== Education Table ===== */
+
 .education-table {
     width: 100%;
     border-collapse: collapse;
@@ -106,7 +98,7 @@ nav a:hover {
     color: #333;
 }
 
-/* ===== Form Styling ===== */
+
 form {
     max-width: 400px;
     margin: auto;
@@ -119,7 +111,7 @@ input, button {
     padding: 8px;
 }
 
-/* ===== Responsive Design ===== */
+
 @media (max-width: 768px) {
 
     nav a {
